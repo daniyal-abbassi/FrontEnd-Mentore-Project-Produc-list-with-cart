@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;600;700&display=swap">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Product list with cart</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <section class="main-section">
+      <h1>Desserts</h1>
+      <main id="dessert-flex"></main>
+    </section>
+  
+    <aside class="sidebar">
+      <div class="cart">
+        <h4>Your Cart (<span class="quantity">0</span>)</h4>
+        <div class="empty-content">
+          <img src="assets/images/illustration-empty-cart.svg" alt="illustration-empty-cart">
+          <p class="empty-message">Your added items will appear here</p>
+        </div>
+        <div class="cart-items"></div>
+
+        <div class="cart-summary" style="display: none;">
+          <div class="total-div">
+              <p>Order Total</p>
+              <p class="cart-total">$0.00</p>
+          </div>
+          <p class="carbo-neutral"><img src="assets/images/icon-carbon-neutral.svg" alt="icon-carbon-neutral">This is a carbo-neutral delivery</p>
+          <button class="confirm-order">Confirm order</button>
+      </div>
+      
+      <div class="overlay" style="display: none;">
+        <div class="final-summary">
+          <img src="assets/images/icon-order-confirmed.svg" alt="icon-order-confirmed">
+          <h1>Order Confirmed</h1>
+          <p class="hope-p">We hope you enjoy your food!</p>
+            <div class="order-summary"></div>
+            <button class="start-new-order">Start new order</button>
+        </div>
+      </div>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>
